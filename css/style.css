@@ -1,9 +1,3 @@
-/* Seletores CSS
-body -> seletor por tag (pode ser qualquer nome de tag)
-.banner -> seletor por classe (tem que constar no html como class="banner")
-#menu -> seletor por id (tem que constar no html como id="menu")
-
-*/
 
 body {
   margin: 0 auto;
@@ -15,17 +9,21 @@ body {
   font-size: 25px;
   line-height: 27px;
 }
-
+ 
 header {
+  display: flex;
+  justify-content: space-between;
   padding: 16px 45px;
   border-bottom: .5px solid #8888888e;
 }
+
 
 main {
   padding: 16px 45px;
 }
 
 .banner {
+  display: flex;
   margin-bottom: 45px;
 }
 
@@ -34,14 +32,10 @@ main {
 }
 
 .products {
+  display: flex;
   text-align: justify;
 }
 
-section .left,
-section .right {
-  display: inline-block;
-  vertical-align: top;
-}
 
 .right {
   margin-left: 90px;
@@ -73,6 +67,8 @@ section .right {
 }
 
 .your-style {
+  display: flex;
+  flex-direction: column;
   margin: 45px 0;
   color: #888888;
 }
@@ -113,6 +109,8 @@ section .right {
 }
 
 footer {
+  display: flex;
+  justify-content: space-between;
   background-color: #333333;
   color: #FFFFFF;
   padding: 45px;
@@ -128,7 +126,7 @@ footer .about {
 }
 
 footer .social-media * {
-  margin: 0 10px 0 0
+  margin: 0 10px 0 0;
 }
 
 #menu {
